@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Crystal Collector Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 class="header col-lg-12 text-center">Crystal Collector Game</h1>
+      </div>
+      <div class="instruction col-lg-12 text-center">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>
+          There are four crystals below. By clicking on a crystal you will add a
+          specific amount of points to your total score.
+        </p>
+        <p>
+          You win the game by matching your total score to random number, you
+          lose the game if your total score goes above the random number.
+        </p>
+        <p>
+          The value of each crystal is hidden from you until you click on it.
+        </p>
+        <p>
+          Each time when the game starts, the game will change the values of
+          each crystal.
+        </p>
+      </div>
+      <div class="row"></div>
+      <div class="row button">
+        <div class="col-lg-3" id="gem1">
+          <img src="assets/images/gem1.png" alt="" />
+        </div>
+        <div class="col-lg-3" id="gem2">
+          <img src="assets/images/gem2.png" alt="" />
+        </div>
+        <div class="col-lg-3" id="gem3">
+          <img src="assets/images/gem3.png" alt="" />
+        </div>
+        <div class="col-lg-3" id="gem4">
+          <img src="assets/images/gem4.png" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          Total Score
+          <div class="totalScore"></div>
+        </div>
+        <div class="col-lg-6">
+          Your Score
+          <div class="totalDisplay"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 wins">Wins</div>
+        <div class="col-lg-6 losses">Loses</div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>

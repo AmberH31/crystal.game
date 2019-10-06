@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background: url(../images/bg.jpg) no-repeat fixed center; */
+  /*height: 100%;*/
+  width: 100%;
+  background-size: cover;
+}
+
+.instruction {
+}
+
+.header {
+  border: 4px solid salmon;
+  padding: 20px;
+  /*background-color: */
+}
