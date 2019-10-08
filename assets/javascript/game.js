@@ -38,9 +38,14 @@ function startGame() {
   $(".totalDisplay").text(totalScore);
   $(".wins").text(numWins);
   $(".losses").text(numLosses);
+
+  console.log(
+    "inside startGAme: " + numLosses + "inside start GAme wins" + numWins
+  );
+
   //   for (i = 0; i < 4; i++) {
   //     gemValue = stoneCollection[i] = randomNum(1, 12);
-  //     console.log("gemvalue :" + gemValue);
+  //    console.log("gemvalue :" + gemValue);
   //   }
   gem1.value = randomNum(1, 12);
   gem2.value = randomNum(1, 12);
@@ -75,9 +80,13 @@ startGame();
 function checker() {
   if (totalScore === matchNum) {
     numWins++;
+    startGame();
   } else if (totalScore > matchNum) {
     numLosses++;
     startGame();
+    console.log(
+      "inside checker: " + numLosses + "inside checker wins" + numWins
+    );
   } else {
     console.log("still in the round");
   }
@@ -86,9 +95,9 @@ function checker() {
   //   $(".losses").html(numLosses);
 }
 
-document.getElementById("again").onclick = function() {
-  startGame();
-};
+// document.getElementById("again").onclick = function() {
+//   startGame();
+// };
 // ---------------------------------------------------
 
 // function setup() {
